@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <filter id="楕円形_4" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="back_button" transform="translate(-1178 -896)">
+    <g transform="matrix(1, 0, 0, 1, 1178, 896)" filter="url(#楕円形_4)">
+      <g id="楕円形_4-2" data-name="楕円形 4" transform="translate(10 10)" fill="#980419" stroke="#fff" stroke-width="2">
+        <circle cx="15" cy="15" r="15" stroke="none"/>
+        <circle cx="15" cy="15" r="14" fill="none"/>
+      </g>
+    </g>
+    <g id="back" transform="translate(880.785 881.645)">
+      <line id="線_12" data-name="線 12" x2="21.821" transform="translate(314.5 31.64) rotate(45)" fill="none" stroke="#fff" stroke-width="3"/>
+      <line id="線_13" data-name="線 13" x2="21.821" transform="translate(329.93 31.64) rotate(135)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

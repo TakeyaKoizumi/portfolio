@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+}
+body {
+  color: #333; /* RGB */
+  font-family: "Noto Sans JP", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.8rem;
+  text-align: center;
+}
+section h2 {
+  font-family: "Noto Serif JP", YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+  font-size: 2.6rem;
+	font-weight: 500;
+  line-height: 2.9rem;
+  color: #3d1b1a;
+}
+@media (min-width: 1040px) {
+  body {
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 2.4rem;
+  }
+  section h2 {
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+  }
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/* header */
+.header {
+  height: 70px;
+  width: 100%;
+  background-color: #FFF;
+}
+.header-logo {
+  width: 120px;
+  height: 35px;
+  margin: 17.5px 12px;
+  float: left;
+}
+.header-button {
+	float: right;
+	margin: 15px 12px;
+	width: 170px;
+	height: 40px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	font-family:"Noto Serif JP", YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+	color: #FFF;
+	display: block;
+	background: linear-gradient(#d73d38, #cb0704);
+	border-radius: 2.5px;
+	border: 1.5px solid #c60001;
+	box-shadow: 0px 2.5px 3px 0 rgba(33,33,33,0.5)
+}
+.header-button:active {
+	box-shadow: none;
+	position: relative;
+	top: 2.5px;
+}
+@media (min-width: 1160px) {
+  .header {
+    height: 90px;
+  }
+  .header__container {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+  .header-logo {
+    width: 204px;
+    height: 60px;
+    margin: 15px 0 0 0;
+    float: left;
+  }
+  .header-button {
+    margin: 20px 0 0 0;
+    width: 280px;
+    height: 52px;
+    font-size: 2.0rem;
+  }
+}
+.text-blank {
+  height: 10px;
+}
+.text-shorten {
+	letter-spacing: -0.1em;
+}
+.text-space {
+	letter-spacing: 0.6em;
+	font-size: 1.1em;
+}
+@media (min-width: 1160px) {
+  .text-blank {
+    height: 1.0em;
+  }
+}
+@media (max-width: 960px) {
+  .br-pc {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .br-sp {
+    display: none;
+  }
+}
+/* footer */
+.footer {
+  height: 50px;
+	padding-top: 10px;
+  background-color: #FFF;
+	position: relative;
+}
+.footer-logo {
+	width: 73px;
+	height: 22px;
+	margin: 0 auto;
+}
+.footer__copyright {
+  width: 100%;
+	font-size: 0.6rem;
+  color: #9b9b9b;
+  text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 3px;
+}
+@media (min-width: 1160px) {
+  .footer {
+    height: 100px;
+    padding: 0;
+  }
+  .footer__container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .footer-logo {
+    float: left;
+    width: 204px;
+    height: 61px;
+    margin: 0;
+  }
+  .footer__copyright {
+    width: 186px;
+    font-size: 1.2rem;
+    text-align: right;
+    position: static;
+    float: right;
+    padding-top: 40px;
+  }
+}

@@ -1,0 +1,517 @@
+@charset "utf-8";
+/* CSS Document */
+p {
+  line-height: 2.0rem;
+  margin-bottom: 2.0rem;
+}
+.text-last {
+  margin-bottom: 0;
+}
+.section__item-title {
+  height: 30px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.item-title__square {
+  width: 12px;
+  height: 30px;
+  background-color: #980419;
+}
+.item-title__text {
+  padding: 5px;
+  padding-right: 10px;
+  border-bottom: solid 1px #AC7B43;
+}
+.section__main-inside {
+  padding-left: 12px;
+}
+@media (min-width: 1160px) {
+  p {
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .section__item-title {
+    height: 35px;
+  }
+  .item-title__square {
+    width: 15px;
+    height: 35px;
+  }
+  .item-title__text {
+    padding: 5px 10px;
+    padding-right: 20px;
+  }
+  .section__main-inside {
+    padding-left: 30px;
+  }
+}
+.section-top {
+  margin-bottom: 60px;
+}
+.section-top__image {
+  width: 100%;
+  height: 100px;
+  background-image: url("../images/gokigan/top.jpg");
+  background-size: 100%;
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1160px) {
+  .section-top {
+    margin-bottom: 90px;
+  }
+  .section-top__image {
+    height: 210px;
+    background-size: 100%;
+    background-position: 50% 52%;
+    background-repeat: no-repeat;
+  }
+}
+.section-time {
+  margin-bottom: 60px;
+}
+.section-time ol {
+  max-width: 283px;
+  margin: 0 auto;
+}
+.section-time ol li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.section-time__month {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.section-time__open-time {
+  width: 180px;
+  margin-left: auto;
+}
+@media (min-width:1160px) {
+  .section-time {
+    margin-bottom: 90px;
+  }
+  .section-time ol {
+    max-width: 500px;
+  }
+  .section-time ol li {
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 2.0rem;
+  }
+  .section-time__open-time {
+    width: 256px;
+  }
+}
+.section-gokigan {
+  margin-bottom: 60px;
+}
+.section-gokigan__text {
+  margin-bottom: 30px;
+}
+@media (min-width:1160px) {
+  .section-gokigan {
+    margin-bottom: 90px;
+  }
+  .section-gokigan__text {
+    margin-bottom: 60px;
+  }
+}
+.section-gokigan__time {
+  margin-bottom: 30px;
+}
+.section-gokigan__time-text {
+  padding-right: 5px;
+}
+@media (min-width:1160px) {
+  .section-gokigan__time {
+    margin-bottom: 60px;
+  }
+  .section-gokigan__time-text {
+    padding-right: 0;
+  }
+}
+.section-gokigan__price {
+  margin-bottom: 30px;
+}
+.section-gokigan__price-pc {
+  display: none;
+}
+.section-gokigan__price img {
+  width: 273px;
+  height: 166px;
+  margin-bottom: 20px;
+}
+.section-gokigan__price ul {
+  max-width: 273px;
+}
+.section-gokigan__price ul li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+.section-gokigan__price ul li:last-child {
+  margin-top: 2.0rem;
+}
+.ofuda-size {
+  margin-left: 7.0em;
+}
+.ofuda-description {
+  text-align: right;
+}
+@media (min-width:1160px) {
+  .section-gokigan__price {
+    margin-bottom: 60px;
+  }
+  .section-gokigan__price-sp {
+    display: none;
+  }
+  .section-gokigan__price-pc {
+    display: flex;
+  }
+  .section-gokigan__price img {
+    width: 524px;
+    height: 318px;
+    margin-bottom: 0;
+    float: left;
+  }
+  .section-gokigan__price-text {
+    margin-left: 30px;
+  }
+  .section-gokigan__price ul {
+    max-width: 415px;
+  }
+  .section-gokigan__price ul li {
+    display: flex;
+    width: 415px;
+  }
+  .section-gokigan__price ul li:last-child {
+    margin-top: 2.4rem;
+    display: block;
+  }
+  .ofuda-size {
+    width: 180px;
+    margin-left: auto;
+  }
+  .koutsu-fuda__flex {
+    display: flex;
+  }
+}
+.section-gokigan__kind {
+  margin-bottom: 30px;
+}
+.section-gokigan__kind-individual {
+  margin-bottom: 30px;
+}
+.kind-list__individual-PC, .kind-list__company-PC {
+  display: none;
+}
+/* Chrome、Safari以外 */
+summary {
+  cursor: pointer;
+  display: block;
+}
+/* Chrome、Safari */
+summary::-webkit-details-marker {
+  display: none;
+}
+.kind-list__head {
+  display: flex;
+  background-color: #3A653A;
+  max-width: 277px;
+  height: 40px;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 1.6rem;
+  line-height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #AC7B43;
+}
+.kind-list__head img {
+  width: 17px;
+  height: 17px;
+  margin-left: 3px;
+}
+details[open] .kind-list__head img {
+  transform: rotate(180deg);
+}
+details[open] table, ul {
+  animation: fadein 0.5s ease;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section-gokigan__kind table {
+  background-color: #FFFCEB;
+  margin-bottom: 20px;
+}
+.section-gokigan__kind th, .section-gokigan__kind td {
+  border: solid 1px #AC7B43;
+  vertical-align: middle;
+  text-align: center;
+  width: 92px;
+  height: 40px;
+}
+.section-gokigan__kind th {
+  background-color: #3A653A;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 1.6rem;
+}
+.kind-list__attention {
+  padding-left: 20px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+@media (min-width:1160px) {
+  .section-gokigan__kind {
+    margin-bottom: 60px;
+  }
+  .kind-list__individual-SP, .kind-list__company-SP {
+    display: none;
+  }
+  .kind-list__individual-PC, .kind-list__company-PC {
+    display: block;
+  }
+  .section-gokigan__kind table {
+    width: 956px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .section-gokigan__kind th, .section-gokigan__kind td {
+    width: 160px;
+    height: 50px;
+    font-size: 2.0rem;
+  }
+  .kind-list__attention {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 60px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+.section-gokigan__omatsuri {
+  margin-bottom: 30px;
+}
+.section-gokigan__omatsuri img {
+  margin-top: 20px;
+  width: 268px;
+  height: 76px;
+  border: solid 1px #707070;
+}
+@media (min-width:1160px) {
+  .section-gokigan__omatsuri {
+    margin-bottom: 60px;
+  }
+  .section-gokigan__omatsuri .section__main-inside {
+    display: flex
+  }
+  .section-gokigan__omatsuri img {
+    margin-top: 20px;
+    width: 557px;
+    height: 158px;
+    margin-left: auto;
+  }
+}
+.section-girei__hatsumiya {
+  margin-bottom: 30px;
+}
+.section-girei__hatsumiya-image {
+  width: 273px;
+  height: 188px;
+  background-image: url("../images/gokigan/hatsumiyamoude.jpg");
+  background-size: 140%;
+  background-position: 70% 50%;
+  margin-bottom: 20px;
+}
+@media (min-width:1160px) {
+  .section-girei__hatsumiya {
+    margin-bottom: 60px;
+  }
+  .section-girei__hatsumiya .section__main-inside {
+    display: flex;
+  }
+  .section-girei__hatsumiya-image {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+  .section-girei__hatsumiya-text {
+    width: 753px;
+  }
+}
+.section-girei__shichigosan {
+  margin-bottom: 30px;
+}
+.section-girei__shichigosan-image {
+  width: 273px;
+  height: 188px;
+  background-image: url("../images/gokigan/shichigosan.jpg");
+  background-size: 100%;
+  background-position: 50% 80%;
+  margin-bottom: 20px;
+}
+@media (min-width:1160px) {
+  .section-girei__shichigosan {
+    margin-bottom: 60px;
+  }
+  .section-girei__shichigosan .section__main-inside {
+    display: flex;
+  }
+  .section-girei__shichigosan-image {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+  .section-girei__shichigosan-text {
+    width: 753px;
+  }
+}
+.section-girei__nyusotsu {
+  margin-bottom: 30px;
+}
+.section-girei__nyusotsu-image {
+  width: 273px;
+  height: 188px;
+  background-image: url("../images/gokigan/nyusotsu.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  margin-bottom: 20px;
+}
+@media (min-width:1160px) {
+  .section-girei__nyusotsu {
+    margin-bottom: 60px;
+  }
+  .section-girei__nyusotsu .section__main-inside {
+    display: flex;
+  }
+  .section-girei__nyusotsu-image {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+  .section-girei__nyusotsu-text {
+    width: 753px;
+  }
+}
+.section-girei__seijin {
+  margin-bottom: 30px;
+}
+.section-girei__seijin-image {
+  width: 273px;
+  height: 188px;
+  background-image: url("../images/gokigan/seijinshiki.jpg");
+  background-size: 100%;
+  background-position: 50% 55%;
+  margin-bottom: 20px;
+}
+@media (min-width:1160px) {
+  .section-girei__seijin {
+    margin-bottom: 60px;
+  }
+  .section-girei__seijin .section__main-inside {
+    display: flex;
+  }
+  .section-girei__seijin-image {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+  .section-girei__seijin-text {
+    width: 753px;
+  }
+}
+.section-girei__kekkon {
+  margin-bottom: 30px;
+}
+.section-girei__kekkon-image {
+  width: 273px;
+  height: 188px;
+  background-image: url("../images/gokigan/kekkonshiki.jpg");
+  background-size: 100%;
+  background-position: 50% 100%;
+  margin-bottom: 20px;
+}
+@media (min-width:1160px) {
+  .section-girei__kekkon {
+    margin-bottom: 60px;
+  }
+  .section-girei__kekkon .section__main-inside {
+    display: flex;
+  }
+  .section-girei__kekkon-image {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+  .section-girei__kekkon-text {
+    width: 753px;
+  }
+}
+.section-girei__choju-image {
+  width: 273px;
+  height: 188px;
+  background-image: url("../images/gokigan/choju.jpg");
+  background-size: 110%;
+  background-position: 0% 0%;
+  margin-bottom: 20px;
+}
+.section-girei__choju table {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.section-girei__choju th, .section-girei__choju td {
+  border: solid 1px #AC7B43;
+  vertical-align: middle;
+  height: 50px;
+}
+.section-girei__choju th {
+  background-color: #FDF3E7;
+  width: 98px;
+  font-weight: 300;
+  text-align: center;
+}
+.section-girei__choju td {
+  background-color: #FFF;
+  width: 175px;
+  padding: 0 8px;
+  text-align: left;
+  line-height: 2.0rem;
+}
+@media (min-width:1160px) {
+  .section-girei__choju .section__main-inside {
+    display: flex;
+  }
+  .section-girei__choju-image {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .section-girei__choju table {
+    margin-left: 30px;
+    font-size: 1.6rem;
+  }
+  .section-girei__choju th, .section-girei__choju td {
+    height: 40px;
+  }
+  .section-girei__choju th {
+    width: 160px;
+  }
+  .section-girei__choju td {
+    width: 435px;
+    padding: 0 0 0 15px;
+    font-size: 1.6rem;
+  }
+}

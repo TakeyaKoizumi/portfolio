@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.bx-wrapper {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+.bx-wrapper li {
+    display: block;
+}
+
+

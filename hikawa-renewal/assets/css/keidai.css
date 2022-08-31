@@ -1,0 +1,354 @@
+@charset "utf-8";
+/* CSS Document */
+p {
+  line-height: 2.0rem;
+  margin-bottom: 2.0rem;
+}
+.text-last {
+  margin-bottom: 0;
+}
+.section__item-title {
+  height: 30px;
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #AC7B43;
+}
+.long-title .section__item-title {
+  height: 50px;
+}
+.item-title__square {
+  width: 12px;
+  height: 30px;
+  background-color: #980419;
+}
+.long-title .item-title__square {
+  height: 50px;
+}
+.item-title__text {
+  padding: 5px;
+  padding-right: 10px;
+}
+.section__main-inside {
+  padding-left: 12px;
+}
+@media (min-width: 1160px) {
+  p {
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+    font-weight: 600;
+  }
+  .section__item-title {
+    height: 35px;
+    max-width: 100%;
+  }
+  .long-title .section__item-title {
+    height: 35px;
+  }
+  .item-title__square {
+    width: 15px;
+    height: 35px;
+  }
+  .long-title .item-title__square {
+    height: 35px;
+  }
+  .item-title__text {
+    padding: 5px 10px;
+    padding-right: 20px;
+  }
+  .section__main-inside {
+    padding-left: 30px;
+  }
+}
+.section-top {
+  margin-bottom: 60px;
+}
+.section-top__image {
+  width: 100%;
+  height: 100px;
+  background-image: url("../images/keidai/top.jpg");
+  background-size: 150%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1160px) {
+  .section-top {
+    margin-bottom: 90px;
+  }
+  .section-top__image {
+    height: 210px;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.map-link__PC {
+  display: none;
+}
+.section-map__image {
+  width: 100%;
+}
+.section-map__image img {
+  width: 100%;
+  border: solid 1px #707070;
+}
+@media (min-width:768px) {
+  .section-map__image {
+    padding: 0 30px;
+  }
+}
+@media (min-width:1160px) {
+  .map-link__SP {
+    display: none;
+  }
+  .map-link__PC {
+    display: block;
+  }
+  /* モーダルウィンドウ */
+  /*全て共通：hideエリアをはじめは非表示*/
+  .hide-area {
+    display: none;
+  }
+  /*全て共通：モーダルのボタンの色を変更したい場合*/
+  .modaal-close:after, .modaal-close:before {
+    background: #ccc;
+  }
+  .modaal-close:focus:after, .modaal-close:focus:before, .modaal-close:hover:after, .modaal-close:hover:before {
+    background: #666;
+  }
+  /*以下はコンテンツ内のレイアウト*/
+  .modaal-container {
+    max-width: 420px;
+    max-height: 550px;
+  }
+  .modaal-content-container {
+    padding: 10px;
+  }
+  .modal-close-button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+  }
+  .modal-area {
+    background-image: url("../images/common-logo/23311274_l.jpg");
+    width: 400px;
+    max-height: 530px;
+  }
+  .modal-area-filter {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+  }
+  .modal-area .section__item-title {
+    width: 360px;
+  }
+  .modal-area .item-title__text {
+    padding-right: 0;
+    line-height: 2.4rem;
+  }
+  .item-title__text span {
+    font-size: 1.6rem;
+  }
+  .modal-area .long-title .section__item-title {
+    height: 60px;
+  }
+  .modal-area .long-title .item-title__square {
+    height: 60px;
+  }
+  .modal-area .section__main-inside {
+    padding-left: 15px;
+  }
+  .modal-image {
+    width: 330px;
+    height: 228px;
+    margin-bottom: 20px;
+  }
+}
+.section-shrine {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.item-title__text span {
+  font-size: 1.6rem;
+}
+.section-shrine__image {
+  width: 273px;
+  height: 188px;
+  margin-bottom: 20px;
+}
+#section__hebinoike {
+  margin-top: 50px;
+}
+.section-shrine__text span {
+  font-weight: 600;
+}
+@media (min-width:768px) {
+  .section-map .section__main {
+    width: 770px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .section-shrine {
+    display: inline-block;
+    vertical-align: top;
+    width: 342px;
+    max-width: 342px;
+  }
+  .section-shrine:nth-child(odd) {
+    margin-right: 40px;
+  }
+  .section-shrine .br-sp {
+    display: none;
+  }
+  .section-shrine .long-title .section__item-title {
+    height: 30px;
+  }
+  .section-shrine .long-title .item-title__square {
+    height: 30px;
+  }
+  .short-section {
+    display: inline-block;
+  }
+  #section__hebinoike {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+}
+@media (min-width:1160px) {
+  .section-map .section__main {
+    font-size: 0;
+    width: 100%;
+    padding-top: 0;
+  }
+  .section-shrine {
+    margin-top: 60px;
+    width: 530px;
+    max-width: 530px;
+  }
+  .short-section .section-shrine {
+    width: 245px;
+  }
+  .short-section .section-shrine__image {
+    width: 200px;
+  }
+  #section__hebinoike {
+    margin-top: 60px;
+  }
+  .section-shrine .section__main-inside {
+    display: flex;
+  }
+  .section-shrine .long-title .section__item-title {
+    height: 35px;
+  }
+  .section-shrine .long-title .item-title__square {
+    height: 35px;
+  }
+  .item-title__text span {
+    font-size: 2.4rem;
+  }
+  .section-shrine__image {
+    width: 220px;
+    height: 151px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  .section-shrine__text {
+    font-size: 1.6rem;
+  }
+}
+.honden {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/honden.jpg");
+  background-size: cover;
+  background-position: 45% 50%;
+  background-repeat: no-repeat;
+}
+.monkyakujin {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/monkyakujin.jpg");
+  background-size: cover;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+.amatsu {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/amatsu.jpg");
+  background-size: cover;
+  background-position: 80% 50%;
+  background-repeat: no-repeat;
+}
+.munakata {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/munakata.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.rokusya {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/rokusya.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.matsuo {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/matsuo.jpg");
+  background-size: cover;
+  background-position: 45% 50%;
+  background-repeat: no-repeat;
+}
+.mitake {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/mitake.jpg");
+  background-size: cover;
+  background-position: 55% 50%;
+  background-repeat: no-repeat;
+}
+.inari {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/inari.jpg");
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+.tenman {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/tenman.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.roumon {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/roumon.jpg");
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+.hebinoike {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/keidai/hebinoike.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

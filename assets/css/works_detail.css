@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+/* TOP スマホ版 */
+.section-top {
+  margin-bottom: 60px;
+  height: 140px;
+}
+.section-top__wave {
+  position: relative;
+  height: 60px;
+}
+#waveCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.section-top__bg {
+  position: relative;
+  height: 80px;
+  background-color: rgba(0, 91, 172, 0.76);
+}
+.section-top__title {
+  font-size: 3.0rem;
+  letter-spacing: 0.03em;
+  line-height: 4.0rem;
+  text-align: center;
+  position: static;
+  color: #ffffff;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+/* TOP PC版 */
+@media (min-width: 1160px) {
+  .section-top {
+    margin-bottom: 90px;
+    height: 240px;
+  }
+  .section-top__wave {
+    position: relative;
+    height: 120px;
+  }
+  .section-top__bg {
+    height: 120px;
+  }
+  .section-top__title {
+    font-size: 4.8rem;
+    line-height: 8.0rem;
+    max-width: 1160px;
+    padding-top: 20px;
+  }
+}
+/* 作品詳細 スマホ版 */
+.work_description {
+  max-width: 325px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 90px;
+}
+.work_description section {
+  margin-bottom: 30px;
+}
+/* 作品タイトル */
+.section-worktitle {
+  margin-bottom: 20px;
+}
+.section-worktitle h2 {
+  font-size: 2.4rem;
+  line-height: 3.0rem;
+  margin-bottom: 20px;
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, 'sans-serif';
+}
+/* ジャンル */
+.section-worktitle__genre {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+/* モックアップ */
+.section-mockup {
+  width: 325px;
+  height: 190px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.section-mockup img {
+  height: 100%;
+  width: 100%
+}
+/* 項目タイトル */
+.section__title {
+  display: flex;
+  align-items: center;
+}
+/* 青長方形 */
+.title-square {
+  width: 10px;
+  height: 24px;
+  background-color: #1A30AC;
+}
+.section__title h3 {
+  font-size: 1.8rem;
+  margin-left: 5px;
+}
+/* 項目タイトル太字 Android */
+.Android .section__title h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/* 項目内容 */
+.section__main {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  line-height: 1.6em;
+}
+/* 作成プロセス 太字 */
+.section-process span {
+  font-weight: 600;
+}
+/* デザインコンセプト */
+.section-design ul {
+  padding-left: 15px;
+}
+.section-design ul li {
+  margin-bottom: 1.0rem;
+}
+/* ポイント */
+.section-point__list li {
+  list-style: none;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #E6F2FF;
+}
+.point-image {
+  width: 305px;
+}
+.point-despriction {
+  width: 305px;
+  padding: 20px;
+}
+/* リンク */
+.section-url a {
+  color: #065FD4;
+  text-decoration: underline;
+}
+/* 作品詳細 PC版 */
+@media (min-width:1160px) {
+  .work_description {
+    max-width: 1100px;
+    margin-bottom: 140px;
+  }
+  .work_description section {
+    margin-bottom: 60px;
+  }
+  /* 作品タイトル */
+  .section-worktitle {
+    margin-bottom: 30px;
+  }
+  .section-worktitle h2 {
+    font-size: 3.0rem;
+    margin-bottom: 30px;
+  }
+  .section-worktitle__genre {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 4.0rem;
+  }
+  /* モックアップ */
+  .section-mockup {
+    width: 1160px;
+    height: 675px;
+    margin-bottom: 60px;
+  }
+  .title-square {
+    width: 12px;
+    height: 30px;
+  }
+  .section__title h3 {
+    font-size: 2.4rem;
+    margin-left: 10px;
+  }
+  /* 項目内容 */
+  .section__main {
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 1.6rem;
+  }
+  /* ポイント */
+  .section-point__list li {
+    display: flex;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    align-items: center;
+  }
+  .point-image {
+    width: 544px;
+  }
+  .point-despriction {
+    width: 525px;
+    padding: 0 40px;
+  }
+}
+/* HOMEに戻るボタン */
+.home-back {
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  font-size: 1.8rem;
+}
+/* 下線を引く */
+.home-back span {
+  border-bottom: solid 2px #333;
+  font-weight: 600;
+}
+/* 太字 Android */
+.Android .home-back {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+@media (min-width:1160px) {
+  .home-back {
+    width: 140px;
+    margin-bottom: 90px;
+    font-size: 2.0rem;
+    font-weight: 400;
+  }
+  /* マウスオーバーで拡大 */
+  .home-back:hover {
+    transform: scale(1.08);
+    transition-duration: 0.3s;
+  }
+}

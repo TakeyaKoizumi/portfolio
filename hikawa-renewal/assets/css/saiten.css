@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* CSS Document */
+p {
+  line-height: 2.0rem;
+  margin-bottom: 2.0rem;
+}
+.text-last {
+  margin-bottom: 0;
+}
+.section__month-title {
+  padding-bottom: 10px;
+  border-bottom: solid 2px #AC7B43;
+  padding-left: 5px;
+}
+.section-event {
+  margin-top: 30px;
+}
+.event-title {
+  background-color: #FFFCEB;
+  width: 100%;
+  height: 30px;
+  box-shadow: 2px 2px 5px 0 rgba(33, 33, 33, 0.3);
+  padding-left: 3px;
+  display: flex;
+  align-items: center;
+  line-height: 2.4rem;
+  margin-bottom: 20px;
+}
+.long-title .event-title {
+  height: 50px;
+}
+.kiku-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.event-day {
+  font-weight: 400;
+  margin-right: 2.0rem;
+}
+.section__main-inside {
+  padding-left: 12px;
+}
+@media (min-width: 768px) {
+  .section__main-inside {
+    padding-left: 30px;
+    padding-right: 28px;
+    display: flex;
+  }
+  .section-event {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1160px) {
+  p {
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .section__month-title {
+    padding-bottom: 12px;
+    padding-left: 10px;
+  }
+  .event-title {
+    height: 50px;
+    padding-left: 5px;
+    line-height: 2.4rem;
+    margin-bottom: 20px;
+  }
+  .kiku-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .event-day {
+    margin-right: 2.6rem;
+  }
+}
+.section-top {
+  margin-bottom: 60px;
+}
+.section-top__image {
+  width: 100%;
+  height: 100px;
+  background-image: url("../images/saiten/top.jpg");
+  background-size: 120%;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+}
+.section-top__lead {
+  font-weight: 600;
+  line-height: 2.2rem;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 35px;
+}
+.section-top__month-menu table {
+  font-size: 1.6rem;
+  color: #FFF;
+  margin: 0 auto;
+}
+.section-top__month-menu td {
+  width: 81px;
+  height: 40px;
+  border: solid 1px #FFF;
+  vertical-align: middle;
+  text-align: center;
+}
+.section-top__month-menu td a {
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.month-menu__PC {
+  display: none;
+}
+.month-menu__SP {
+  background-color: #8A581E;
+}
+@media (min-width: 1160px) {
+  .section-top {
+    margin-bottom: 90px;
+  }
+  .section-top__image {
+    height: 210px;
+    background-size: 100%;
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+  }
+  .section-top__lead {
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    padding-top: 60px;
+    margin-bottom: 50px;
+  }
+  .section-top__month-menu table {
+    font-size: 2.0rem;
+  }
+  .section-top__month-menu td {
+    width: 90px;
+    height: 50px;
+  }
+  .section-top__month-menu td:hover {
+    background-color: #C39664;
+  }
+  .month-menu__SP {
+    display: none;
+  }
+  .month-menu__PC {
+    width: 1158px;
+    display: block;
+    background: linear-gradient(#7B480D, #AC7B43);
+  }
+}
+.section-month {
+  margin-bottom: 60px;
+}
+.section-month:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1160px) {
+  .section-month {
+    margin-bottom: 90px;
+  }
+}
+.event-image {
+  width: 273px;
+  height: 179px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .event-image {
+    width: 260px;
+    height: 170px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  .text-brank__top .event-text {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1160px) {
+  .event-image {
+    margin-right: 30px;
+  }
+}
+#keneisai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/keneisai.jpg");
+  background-size: 100%;
+  background-position: 50% 55%;
+}
+#genshisai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/genshisai.jpg");
+  background-size: 100%;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+}
+#genshisai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/genshisai.jpg");
+  background-size: 100%;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+}
+#setsubunsai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/setsubunsai.jpg");
+  background-size: 100%;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+}
+#ikuwashinji {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/ikuwashinji.jpg");
+  background-size: 100%;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+}
+#kinensai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/kinensai.jpg");
+  background-size: 100%;
+  background-position: 50% 95%;
+  background-repeat: no-repeat;
+}
+#satokagura {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/satokagura.jpg");
+  background-size: 100%;
+  background-position: 50% 65%;
+  background-repeat: no-repeat;
+}
+#shunbunsai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/shunbunsai.jpg");
+  background-size: 100%;
+  background-position: 50% 90%;
+  background-repeat: no-repeat;
+}
+#hanashizume {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/hanashizume.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#hourisai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/hourisai.jpg");
+  background-size: 100%;
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+}
+#machiaesai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/michiaesai.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#chimakishinji {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/chimakishinji.jpg");
+  background-size: 100%;
+  background-position: 50% 65%;
+  background-repeat: no-repeat;
+}
+#oharaishiki {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/ooharae.jpg");
+  background-size: 100%;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+}
+#reisai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/reisai.jpg");
+  background-size: 100%;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+}
+#jinkousai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/jinkousai.jpg");
+  background-size: 100%;
+  background-position: 50% 45%;
+  background-repeat: no-repeat;
+}
+#nuiboshinji {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/nuiboshinji.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#sakuheisai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/sakuheisai.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#ninamesai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/ninamesai.jpg");
+  background-size: 100%;
+  background-position: 50% 75%;
+  background-repeat: no-repeat;
+}
+#daitousai-zensai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/daitousaizensai.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#daitousai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/daitousai.jpg");
+  background-size: 100%;
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+}
+#shokutyousai {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/saiten/shokutyousai.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

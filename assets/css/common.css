@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+}
+body {
+  color: #333; /* RGB */
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, 'sans-serif';
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 2.0rem;
+  text-align: center;
+}
+section h1 {
+  font-weight: 700;
+  font-family: 'Maven Pro', Arial, Helvetica, "sans-serif";
+}
+section h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1A30AC;
+  font-family: 'Maven Pro', Arial, Helvetica, "sans-serif";
+}
+section h3 {
+  font-size: 2.0rem;
+  font-weight: 600;
+}
+.main {
+  min-width: 375px;
+  padding-top: 0px;
+}
+.background {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  padding-bottom: 90px;
+}
+@media (min-width: 1160px) {
+  .main {
+    padding-top: 0;
+  }
+  .background {
+    padding-bottom: 140px;
+  }
+  body {
+    font-size: 1.6em;
+    line-height: 2.4rem;
+  }
+  section h2 {
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+  }
+  section h3 {
+    font-size: 2.6rem;
+  }
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/* header */
+.header {
+  height: 40px;
+  width: 100%;
+  background-color: #FFF;
+  font-family: 'Maven Pro', Arial, Helvetica, "sans-serif";
+  position: relative;
+  z-index: 10;
+}
+.header__container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.header__logo-mark {
+  width: 30px;
+  height: 30px;
+}
+.header__logo-type {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1A30AC;
+  text-align: left;
+  line-height: 1.6rem;
+  margin-left: 3px;
+}
+@media(max-width: 1160px) {
+  /* ハンバーガーメニュー */
+  .open-button {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  /* ハンバーガーメニュー 線描画 */
+  .open-button span, .open-button span:before, .open-button span:after {
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: #2679CD;
+    display: block;
+    content: "";
+  }
+  /* ハンバーガーメニュー 中線 */
+  .open-button span:before {
+    bottom: -9px;
+  }
+  /* ハンバーガーメニュー 下線 */
+  .open-button span:after {
+    bottom: -18px;
+  }
+  /* スマホ版メニュー */
+  .navigation-filter.panelactive {
+    z-index: 1999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+  }
+  .header__navigation {
+    position: fixed;
+    top: 0;
+    left: -75%;
+    z-index: 9999;
+    width: 70%;
+    height: 100vh;
+    background-color: #2679CD;
+    text-align: left;
+    color: #FFF;
+    padding-top: 15px;
+    transition: all 0.6s;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.25);
+  }
+  .header__navigation.panelactive {
+    left: 0;
+  }
+  #menu-title {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  /* スマホ版メニュー 閉じるボタン */
+  .close-button {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+  }
+  /* 閉じるボタン 描画 */
+  .close-button span:before, .close-button span:after {
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    background: #FFF;
+    display: block;
+    content: "";
+  }
+  /* 閉じるボタン 線 傾ける */
+  .close-button span:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  /* 閉じるボタン 線 傾ける */
+  .close-button span:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  /* スマホ版メニュー ナビゲーション */
+  .header__navigation ul {
+    margin-bottom: 30px;
+  }
+  .header__navigation ul li {
+    border-bottom: solid 1px #FFF;
+    height: 50px;
+    line-height: 50px;
+  }
+  .header__navigation ul li:first-child {
+    border-top: solid 1px #FFF;
+  }
+  .header__navigation ul li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFF;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1160px) {
+  .header {
+    height: 100px;
+    position: relative;
+  }
+  .header__container {
+    max-width: 1160px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .header__logo-mark {
+    width: 50px;
+    height: 50px;
+  }
+  .header__logo-type {
+    font-size: 2.6rem;
+    line-height: 3.0rem;
+    margin-left: 6px;
+  }
+  .header__navigation {
+    display: block;
+    text-align: right;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-left: auto;
+  }
+  #menu-title {
+    display: none;
+  }
+  .header__navigation ul li {
+    display: inline-block;
+    margin-left: 36px;
+  }
+  .header__navigation ul li a {
+    text-decoration: none;
+    color: #2679CD;
+  }
+  /* マウスオーバーで色変える */
+  .header__navigation ul li a:hover {
+    color: #1A30AC;
+  }
+  /*
+  .fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  */
+}
+.section__area {
+  margin: 0 25px;
+}
+.section__title-sub {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.text-blank {
+  height: 1.0em;
+}
+.text-shorten {
+  letter-spacing: -0.1em;
+}
+.text-space {
+  letter-spacing: 0.6em;
+  font-size: 1.1em;
+}
+@media (min-width: 1160px) {
+  .section-top__title {
+    font-size: 3.0rem;
+  }
+  .section__area {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+  .section__title-sub {
+    font-size: 1.8rem;
+  }
+}
+/* PC版のみの改行 */
+@media (max-width: 1160px) {
+  .br-pc {
+    display: none;
+  }
+}
+/* スマホ版のみの改行 */
+@media (min-width: 1160px) {
+  .br-sp {
+    display: none;
+  }
+}
+/* footer */
+.footer {
+  min-height: 50px;
+  min-width: 375px;
+  background-color: #2679CD;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+small {
+  font-family: Arial, Helvetica, "sans-serif";
+}
+@media (min-width: 1160px) {
+  .footer {
+    min-height: 150px;
+    padding: 0;
+    font-size: 2.0rem;
+  }
+}
+/* 上に戻るボタン */
+#scroll-top {
+  background-color: rgb(57 57 57 / 50%);
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+  position: fixed;
+}
+#scroll-top a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#scroll-top img {
+  width: 25px;
+  height: 25px;
+}

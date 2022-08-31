@@ -1,0 +1,453 @@
+@charset "utf-8";
+/* CSS Document */
+/* TOP スマホ版 */
+.section-top {
+  margin-bottom: 60px;
+  height: 400px;
+}
+.section-top__wave {
+  position: relative;
+  height: 60px;
+}
+#waveCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.section-top__bg {
+  position: relative;
+  height: 340px;
+  background-color: rgba(0, 91, 172, 0.76);
+}
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/* サイトタイトル */
+.section-top__title {
+  font-size: 3.6rem;
+  letter-spacing: 0.03em;
+  line-height: 4.0rem;
+  text-align: left;
+  position: absolute;
+  color: #ffffff;
+  margin-left: 25px;
+  padding-top: 120px;
+}
+/* TOP PC版 */
+@media (min-width: 1160px) {
+  .section-top {
+    margin-bottom: 90px;
+    height: 770px;
+  }
+  .section-top__wave {
+    position: relative;
+    height: 120px;
+  }
+  .section-top__bg {
+    height: 650px;
+  }
+  /* サイトタイトル */
+  .section-top__title {
+    font-size: 6.4rem;
+    line-height: 8.0rem;
+    position: static;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 230px;
+  }
+}
+/* WORKS スマホ版 */
+.section-works {
+  margin: 0 25px;
+  margin-bottom: 60px;
+}
+.section-works ul {
+  max-width: 325px;
+  padding-top: 30px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.section-works ul li {
+  width: 325px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.section-works ul li:last-child {
+  margin-bottom: 0;
+}
+.section-works__thumnail {
+  height: 270px;
+  width: 325px;
+  margin-bottom: 10px;
+}
+/* 氷川神社 スクリーンショット */
+#hikawa-renewal-piture {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/top/hikawa_site.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  border: 1px solid #999999;
+}
+/* スグ食べ スクリーンショット */
+#sugutabe-piture {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/top/sugutabe_site.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  border: 1px solid #999999;
+}
+/* ポートフォリオサイト スクリーンショット */
+#portfolio-site-piture {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/top/myportfolio.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  border: 1px solid #999999;
+}
+/* カフェバナー 画像 */
+#cafe-banar-piture {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/top/banar.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  border: 1px solid #999999;
+}
+/* 名刺 画像 */
+#namecard-piture {
+  height: 96%;
+  width: 100%;
+  background-image: url("../images/top/namecard.jpg");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  border: 1px solid #999999;
+}
+.section-works__text {
+  text-align: left;
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+}
+.section-works__text-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+/* 作品タイトル 太字 Android */
+.Android .section-works__text-title {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/* WORKS タブレット版 */
+@media (min-width: 757px) {
+  .section-works ul {
+    max-width: 750px;
+  }
+  /* 2列表示にする */
+  .section-works ul li {
+    display: inline-block;
+  }
+  /* 左列のみmargin-right設定 */
+  .section-works ul li:nth-child(odd) {
+    margin-right: 40px;
+  }
+}
+/* WORKS PC版 */
+@media (min-width: 1180px) {
+  .section-works {
+    max-width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+  .section-works ul {
+    max-width: 1160px;
+    padding-top: 60px;
+  }
+  .section-works ul li {
+    width: 360px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+  /* 3列表示 3つ目の作品の右側は空けない */
+  .section-works ul li:nth-child(3n) {
+    margin-right: 0;
+  }
+  /* 下の行のmargin-bottom: 0 */
+  .section-works ul li:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .section-works__thumnail {
+    height: 300px;
+    width: 360px;
+    margin-bottom: 20px;
+  }
+  /* マウスが乗ったときに画像拡大 */
+  .section-works__thumnail:hover {
+    transform: scale(1.08);
+    transition-duration: 0.3s;
+  }
+  /* マウスが乗ったときに文字を薄くする */
+  .section-works__text-title a:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+}
+/* ABOUT スマホ版 */
+.section-about {
+  margin: 0 25px;
+  margin-bottom: 60px;
+}
+/* 写真＋文章スペースの大きさ */
+.section-about__space {
+  padding-bottom: 60px;
+  width: 100%;
+  height: 566px;
+  margin-top: 30px;
+  position: relative;
+}
+/* 写真　左上で固定 */
+.section-about__image {
+  height: 216px;
+  width: 300px;
+  background-image: url("../images/top/about_img.jpg");
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  border: solid 1px #9A7D53;
+  position: absolute;
+}
+/* 文章　右下で固定 */
+.section-about__description {
+  margin-left: 25px;
+  background-color: #E6F2FF;
+  padding: 20px;
+  padding-top: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.section-about__text {
+  text-align: left;
+  line-height: 2.0rem;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+.section-about__profile {
+  margin-bottom: 20px;
+}
+.section-about__profile-name {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+/* 名前 太字 Android */
+.Android .section-about__profile-name span {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.button-area {
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+}
+.section-about__button {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #ffffff;
+  width: 200px;
+  height: 40px;
+  background-color: #1A30AC;
+  border-radius: 30px;
+  line-height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ボタン 太字 Android */
+.Android .section-about__button {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/* ABOUT タブレット版 */
+@media (min-width:540px) {
+  .section-about {
+    max-width: 540px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .section-about__image {
+    height: 280px;
+    width: 440px;
+    border: solid 2px #9A7D53;
+  }
+}
+/* ABOUT PC版 */
+@media (min-width:1160px) {
+  .section-about {
+    max-width: 1160px;
+    margin-bottom: 90px;
+  }
+  .section-about__space {
+    width: 1100px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .section-about__image {
+    height: 360px;
+    width: 500px;
+  }
+  .section-about__description {
+    width: 700px;
+    padding: 30px;
+  }
+  .section-about__text {
+    line-height: 2.6rem;
+    margin-bottom: 30px;
+    padding-left: 120px;
+    font-size: 1.6rem;
+  }
+  .section-about__profile {
+    margin-bottom: 30px;
+  }
+  .section-about__profile-name {
+    font-size: 2.4rem;
+  }
+  .button-area {
+    width: 300px;
+    height: 50px;
+  }
+  .section-about__button {
+    font-size: 2.0rem;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+  }
+  /* ボタン マウスオーバー時拡大 */
+  .section-about__button:hover {
+    transform: scale(1.08);
+    transition-duration: 0.3s;
+  }
+}
+/* SKILL スマホ版 */
+.section-skill {
+  background-color: #E6F2FF;
+  padding: 30px 25px 60px 25px;
+}
+.section-skill ul {
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 0;
+  max-width: 600px;
+}
+.section-skill ul li {
+  background-color: #ffffff;
+  list-style: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px 20px;
+  font-size: 1.4rem;
+}
+/* リストの最後 margin-bottom: 0; */
+.section-skill ul li:last-child {
+  margin-bottom: 0;
+}
+/* アイコンとテキストを横に並べる */
+.skill-wrap {
+  display: flex;
+}
+.skill-icon {
+  min-width: 60px;
+  min-height: 60px;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+.skill-text {
+  text-align: left;
+}
+.skill-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.skill-description {
+  line-height: 2.0rem;
+}
+/* SKILL PC版 */
+@media (min-width:1160px) {
+  .section-skill {
+    padding: 60px 0 90px 0;
+  }
+  .section-skill ul {
+    max-width: 1160px;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-size: 0;
+  }
+  /* 2列表示 */
+  .section-skill ul li {
+    display: inline-block;
+    width: 560px;
+    height: 170px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 25px 30px;
+    font-size: 1.6rem;
+    vertical-align: top;
+  }
+  /* 列中央空ける */
+  .section-skill ul li:nth-child(odd) {
+    margin-right: 40px;
+  }
+  .skill-wrap {
+    height: 120px;
+  }
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    margin-right: 40px;
+  }
+  .skill-title {
+    font-size: 2.0rem;
+  }
+  .skill-description {
+    font-size: 1.6rem;
+  }
+}
+/* CONTACT スマホ版 */
+.section-contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #F9FFA8;
+}
+.section-contact__message {
+  margin: 40px 0;
+}
+.contact-mail {
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-family: Arial, Helvetica, "sans-serif";
+}
+/* CONTACT PC版 */
+@media (min-width: 1160px) {
+  .section-contact {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+  .section-contact__message {
+    margin: 60px 0;
+  }
+  .contact-mail {
+    font-size: 2.4rem;
+  }
+}
